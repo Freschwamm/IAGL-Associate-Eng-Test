@@ -1,5 +1,8 @@
 .todo-app {
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /** add todo **/
@@ -11,12 +14,70 @@
 .todo-list {
     margin-top: 1rem;
     text-align: left;
-    list-style: none;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgb(94, 93, 240);
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    padding: 20px;
 }
 
 /** todo item **/
 .todo-item {
-    font-family: monospace;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
     cursor: pointer;
     line-height: 1.5;
+    padding: 20px 20px 0;
+    border-bottom: .5px solid rgb(94, 92, 90);
+    list-style-type: none;
+}
+
+.todo-add {
+    display: flex;   
+    justify-content: flex-start;
+    flex: 1;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, rgb(85, 60, 154) 45%, rgb(238, 75, 43));
+    color: transparent;
+    background-clip: text;
+}
+
+
+button {
+    background: rgb(94, 93, 240);
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    border: 0;
+}
+
+input {
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    background: 0;
+    border: 0;
+    outline: none;
+    width: 80vw;
+    max-width: 400px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(85, 60, 154, .6) 45%, rgb(238, 75, 43, 0.6));
 }
